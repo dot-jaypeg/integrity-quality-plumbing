@@ -185,17 +185,8 @@ a { color: inherit; text-decoration: none; }
   gap: 12px;
   margin-right: auto;
 }
-.brand-mark { height: 46px; width: auto; transition: height 0.4s var(--ease); }
-.site-header.scrolled .brand-mark { height: 38px; }
-.brand-word {
-  font-family: var(--font-head);
-  font-weight: 600;
-  font-size: 1.15rem;
-  letter-spacing: 0.02em;
-  color: var(--cream-light);
-  white-space: nowrap;
-}
-.brand-word strong { font-weight: 900; color: var(--red); }
+.brand-mark { height: 58px; width: auto; transition: height 0.4s var(--ease); }
+.site-header.scrolled .brand-mark { height: 46px; }
 
 .main-nav { display: flex; align-items: center; gap: 30px; }
 .nav-link {

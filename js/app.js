@@ -60,8 +60,8 @@
     var track = carousel.querySelector('.carousel-track');
     var slides = Array.prototype.slice.call(carousel.querySelectorAll('.carousel-slide'));
     var dotsWrap = wrap.querySelector('.carousel-dots');
-    var prevBtn = carousel.querySelector('.carousel-arrow.prev');
-    var nextBtn = carousel.querySelector('.carousel-arrow.next');
+    var prevBtn = wrap.querySelector('.carousel-arrow.prev');
+    var nextBtn = wrap.querySelector('.carousel-arrow.next');
     var index = 0;
     var timer;
 

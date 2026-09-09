@@ -28,6 +28,16 @@
     });
   });
 
+  // Highlight the current page in nav (each page's header markup is
+  // copy-pasted, so this avoids hand-maintaining an active class per file)
+  var currentPage = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-link').forEach(function (link) {
+    var linkPage = link.getAttribute('href').split('#')[0] || 'index.html';
+    if (linkPage === currentPage) {
+      link.classList.add('is-active');
+    }
+  });
+
   // Scroll-triggered reveal animations
   var revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
